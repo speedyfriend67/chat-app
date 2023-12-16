@@ -2,15 +2,68 @@
 
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<head>
+	<title>ChatApp</title>
+</head>
+
+<main class="bg-gray-900 text-gray-200 min-h-screen flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
+
+	<div class="rounded-lg border text-card-foreground shadow-sm max-w-md w-full space-y-8 bg-gray-800" data-v0-t="card">
+
+		<div class="flex flex-col space-y-1.5 p-6">
+			<span class="relative flex shrink-0 overflow-hidden rounded-full mx-auto h-12 w-auto"></span>
+			<h2 class="mt-6 text-center text-3xl font-extrabold text-gray-200">
+				Welcome to ChatApp!
+			</h2>
+		</div>
+
+		<div class="p-6 mt-8 space-y-6">
+			<div class="rounded-md shadow-sm -space-y-px">
+				<div>
+					<label class="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70 sr-only" for="name">
+						User Name
+					</label>
+					<input
+						class="h-10 bg-background text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-700 placeholder-gray-500 text-gray-200 rounded-t-md focus:outline-none focus:ring-gray-500 focus:border-gray-500 focus:z-10 sm:text-sm"
+						id="user-name"
+						required=""
+						placeholder="User Name"
+						type="text"
+						name="user-name"
+						style="color:rgb(47, 47, 47)"
+					/>
+				</div>
+
+				<div>
+					<label
+						class="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70 sr-only"
+						for="room-code"
+					>
+						Room Code
+					</label>
+					<input
+						class="h-10 bg-background text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-700 placeholder-gray-500 text-gray-200 rounded-b-md focus:outline-none focus:ring-gray-500 focus:border-gray-500 focus:z-10 sm:text-sm"
+						id="room-code"
+						autocomplete="room-code"
+						required=""
+						placeholder="Room code"
+						type="text"
+						name="room-code"
+						style="color:rgb(47, 47, 47)"
+					/>
+				</div>
+			</div>
+
+			<div>
+				<button
+					class="items-center ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 h-10 group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-gray-200 bg-gray-700 hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500"
+					type="submit"
+				>
+					Enter Room
+				</button>
+			</div>
+		</div>
+
+	</div>
+
+</main>
